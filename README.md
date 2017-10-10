@@ -1,6 +1,7 @@
 # components
 
-Generic set of responsive React components intended to provide a consistent starting point when using in an application.
+Lightweight style guide and component collection used to build complex, responsive UIs.
+<!-- Generic set of responsive React components intended to provide a consistent starting point when using in an application. -->
 
 ## TL;DR
 
@@ -20,6 +21,8 @@ Generic set of responsive React components intended to provide a consistent star
 
 ## Why?
 
+**NOTE: Do not use this in production.  It is primarily intended for my personal use in demos and prototypes.  Perhaps in the future tests will be added to make it production ready.**
+
 Over the past few months I've come to appreciate using a design/style guide in my projects and have spent considerable time evaluating modern CSS solutions and for now, have settled on [`glamorous`](https://github.com/paypal/glamorous).  With this in mind, my goals for this repo are:
 
 - enable the consumer of this module to build **complex**, **responsive** views by composing together the relatively simple components provided here
@@ -28,6 +31,7 @@ Over the past few months I've come to appreciate using a design/style guide in m
 
 ## TODO
 
+- [ ] **PRIORITY** Build simple container to render a component so that we can show usage examples
 - [ ] Decide on API for passing style props
 - [ ] release `propStyles` utility as a separate package
 - [ ] figure out how to properly use a higher order component | render prop component to reduce 'song and dance'
@@ -75,6 +79,7 @@ yarn add components
 
 ### Sidebar
 
+An opinionated component that depends on [`react-router`](https://reacttraining.com/react-router/) and is implemented using an example from their docs.  
 // TODO
 
 ### Loading

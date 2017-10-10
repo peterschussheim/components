@@ -1,15 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import App from './App'
+import renderDocument from './guide/document'
 import './styles/base.css'
 
 const rootEl = document.getElementById('root')
 
-ReactDOM.render(<App />, rootEl)
-
-if (module.hot) {
-  module.hot.accept('./App', () => {
-    const NextApp = require('./App').default
-    ReactDOM.render(<NextApp />, rootEl)
-  })
-}
+renderDocument(rootEl)
