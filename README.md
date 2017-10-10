@@ -12,6 +12,7 @@ Generic set of responsive React components intended to provide a consistent star
 - [Dependencies](#dependencies)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Components](#components)
 - [Examples](#examples)
 - [Other Solutions](#other-solutions)
 - [Inspiration](#inspiration)
@@ -29,14 +30,17 @@ Over the past few months I've come to appreciate using a design/style guide in m
 
 - [ ] Decide on API for passing style props
 - [ ] release `propStyles` utility as a separate package
+- [ ] figure out how to properly use a higher order component | render prop component to reduce 'song and dance'
 
 ## Dependencies
 
 - [`glamor`](https://github.com/threepointone/glamor)
 - [`glamorous`](https://github.com/paypal/glamorous)
+- [`styled-system`](https://github.com/jxnblk/styled-system/)
 
 ## Installation
 
+**NOTE: this package has not yet been puvblished to NPM.**
 This module is distributed via [npm](https://npm.com) and should be installed as a `dependency`:
 
 ```
@@ -46,6 +50,62 @@ yarn add components
 ## Usage
 
 // TODO
+
+## Components
+
+### Box
+
+// TODO
+
+### Button
+
+// TODO
+
+### Flex
+
+// TODO
+
+### Text
+
+// TODO
+
+### Modal
+
+// TODO
+
+### Sidebar
+
+// TODO
+
+### Loading
+
+// TODO
+
+### Nav
+
+// TODO
+
+### Error Boundary
+
+// TODO
+
+### Header
+
+Looking at the example below (note that currently this snippet is HTML used to guide the implementation in React), a `Header` component is the composition of primitives:
+
+```html
+<!-- https://teamtreehouse.com/community/what-is-the-difference-between-header-and-h1 -->
+<header>
+  <img src="images/logo.png" alt="Logo">
+  <nav>
+    <ul>
+      <li><a href="page-1.html">Page 1</a></li>
+      <li><a href="page-2.html">Page 2</a></li>
+      <li><a href="page-3.html">Page 3</a></li>
+    </ul>
+  </nav>
+</header>
+```
 
 ## Examples
 
@@ -62,6 +122,7 @@ In this section there are a few recipes to compose components provided in this m
 ## Inspiration
 
 - [James Long's](https://github.com/jlongster) recent livestreams
+- [Tachyons](http://github.com/tachyons-css/tachyons/)
 
 ## LICENSE
 
