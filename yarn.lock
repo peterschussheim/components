@@ -6001,6 +6001,12 @@ style-loader@0.18.2:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
+styled-system@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-1.0.7.tgz#3780625e800f903340d7742af3cf5ee43c1c023c"
+  dependencies:
+    prop-types "^15.6.0"
+
 supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
