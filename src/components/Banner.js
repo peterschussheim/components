@@ -4,7 +4,7 @@ import glamorous from 'glamorous'
 import Flex from './Flex'
 import Box from './Box'
 import Header from './Header'
-import Text from './Text'
+import ResponsiveText from './ResponsiveText'
 import Button from './Button'
 
 class Banner extends React.Component {
@@ -13,10 +13,10 @@ class Banner extends React.Component {
       <Flex p={3} style={{ height: '100%' }} align="left">
         <Box width={[1, '640px']}>
           <Header f={[6, 7, 8]}>Stylsssed System</Header>
-          <Text f={4} bold>
+          <ResponsiveText f={4} bold>
             Design system utilities for styled-components, glamorous, and other
             css-in-js libraries
-          </Text>
+          </ResponsiveText>
           <Flex align="left" py={2}>
             <Button
               type="primary"

@@ -33,7 +33,7 @@ Over the past few months I've come to appreciate using a design/style guide in m
 
 - [ ] **PRIORITY** Build simple container to render a component so that we can show usage examples
 - [ ] Decide on API for passing style props
-- [ ] release `propStyles` utility as a separate package
+- [x] release `propStyles` utility as a separate package
 - [ ] figure out how to properly use a higher order component | render prop component to reduce 'song and dance'
 
 ## Dependencies

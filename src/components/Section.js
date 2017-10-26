@@ -1,5 +1,6 @@
 import React from 'react'
-import Text from './Text'
+import ResponsiveText from './ResponsiveText'
+import { Div } from 'glamorous'
 
 export default function Section({ children, direction = 'vertical' }) {
   const arr = React.Children.toArray(children)
@@ -20,7 +21,7 @@ export default function Section({ children, direction = 'vertical' }) {
     direction === 'horizontal' ? 'marginHorizontal' : 'marginVertical'
 
   return (
-    <div
+    <Div
       style={{
         flexDirection: direction === 'horizontal' ? 'row' : 'column'
       }}
@@ -28,9 +29,9 @@ export default function Section({ children, direction = 'vertical' }) {
       {items.map((item, i) => {
         return Array.isArray(item) ? (
           <div style={{ [innerMarginKey]: 15 }} key={i}>
-            <Text style={{ color: '#c0c0c0', fontSize: 10, marginBottom: 5 }}>
+            <ResponsiveText style={{ fontSize: 12, marginBottom: 5 }}>
               {item[0]}
-            </Text>
+            </ResponsiveText>
             {item[1]}
           </div>
         ) : (
@@ -39,6 +40,6 @@ export default function Section({ children, direction = 'vertical' }) {
           </div>
         )
       })}
-    </div>
+    </Div>
   )
 }

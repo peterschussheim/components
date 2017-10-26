@@ -1,3 +1,8 @@
+// @flow
+
+// NOTE: currently the browser needs to be manually refreshed when adding new
+// usage files.
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 
@@ -9,6 +14,8 @@ function pathToName(path) {
 }
 
 // TODO: make update bg fade after 5 seconds
+// if (updated):
+//  transition backgroundColor: 'tomato' and then transition BACK to backgroundColor: 'transparent'
 function Usage({ name, render, updated }) {
   return (
     <div
@@ -17,7 +24,13 @@ function Usage({ name, render, updated }) {
         backgroundColor: updated ? 'tomato' : 'transparent'
       }}
     >
-      <h1>{name}</h1>
+      <h3
+        style={{
+          borderBottom: 'solid 1px'
+        }}
+      >
+        {name}
+      </h3>
       {render()}
     </div>
   )
