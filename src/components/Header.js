@@ -1,15 +1,15 @@
 import React from 'react'
-import glamorous from 'glamorous'
 import { margin } from 'styled-system'
-import ResponsiveText from './ResponsiveText'
-import Button from './Button'
+import glamorous, { ThemeProvider } from 'glamorous'
+import propStyles from 'prop-styles'
+import Text from './Text'
 
 const Heading = glamorous.h1(margin)
 
 const Header = ({ heading, text }) => (
   <header>
     <Heading heading={heading} />
-    <ResponsiveText text={text} />
+    <Text text={text} />
   </header>
 )
 

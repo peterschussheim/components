@@ -6,7 +6,8 @@
     "glamor": "^2.20.40",
     "glamorous": "^4.9.7",
     "prop-styles": "2.0.0",
-    "prop-types": "^15.6.0",
+    "prop-types": "15.6.0",
+    "prop-types-extra": "1.0.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",
@@ -20,6 +21,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-plugin-react-flow-props-to-prop-types": "0.15.0",
     "flow-bin": "^0.56.0"
   }
 }

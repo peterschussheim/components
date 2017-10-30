@@ -1,11 +1,6 @@
 # components
 
-Lightweight style guide and component collection used to build complex, responsive UIs.
-<!-- Generic set of responsive React components intended to provide a consistent starting point when using in an application. -->
-
-## TL;DR
-
-// TODO
+Lightweight style guide and component collection for building complex, responsive React components.
 
 ## Table of Contents
 - [Why?](#why)
@@ -25,22 +20,26 @@ Lightweight style guide and component collection used to build complex, responsi
 
 Over the past few months I've come to appreciate using a design/style guide in my projects and have spent considerable time evaluating modern CSS solutions and for now, have settled on [`glamorous`](https://github.com/paypal/glamorous).  With this in mind, my goals for this repo are:
 
-- enable the consumer of this module to build **complex**, **responsive** views by composing together the relatively simple components provided here
-- **reduce repetition** by making these components reusable and able to be styled dynamically
-- a single page to be used as a bare bones style guide, for quick, distraction-free reference (a minimal [`storybook`](https://github.com/storybooks/storybook))
+- enable the consumer to build **complex**, **responsive** views by composing together these primitive components
+- make it easy to have **consistant** UI components
+- **reduce repetition and code duplication** by making these components reusable and able to be styled dynamically **during usage**
+- a single page style/design guide, for quick, distraction-free reference (a minimal [`storybook`](https://github.com/storybooks/storybook))
 
-## TODO
+As a quick aside, [Mars Julian](https://twitter.com/marsjosephine) gave a fantastic talk on [reusable UI components](https://www.youtube.com/watch?v=rMFI1HtuFv4) which helped clarify some of the ideas here.  Reusable UI components should satisfy the following high level requirements:
 
-- [ ] **PRIORITY** Build simple container to render a component so that we can show usage examples
-- [ ] Decide on API for passing style props
-- [x] release `propStyles` utility as a separate package
-- [ ] figure out how to properly use a higher order component | render prop component to reduce 'song and dance'
-
+- self-sufficiency
+  - data-agnostic: let the parent handle the validation of the shape of our data
+  - enough state to be useful
+  - state initialization: allow parent to programmatically initialize child component in specific state (controled vs. uncontrolled).
+- easy to integrate with or into other components
+  - self-documenting: use `prop-types`, `flow`,  whatever. **Specify what prop types the component expects.** The point is to make the consumer's job of integrating as seamless and easy as possible.
+  - **fill the container element**
+  - **be explicit** about which props are required to have the component work as expected.
+  - remove backdoors into the reusable component
 ## Dependencies
 
 - [`glamor`](https://github.com/threepointone/glamor)
 - [`glamorous`](https://github.com/paypal/glamorous)
-- [`styled-system`](https://github.com/jxnblk/styled-system/)
 
 ## Installation
 
@@ -118,16 +117,24 @@ In this section there are a few recipes to compose components provided in this m
 
 // TODO
 
+## TODO
+
+- [ ] figure out how to properly use a higher order component | render prop component to reduce 'song and dance'
+- [x] **PRIORITY** Build simple container to render a component so that we can show usage examples
+- [x] Decide on API for passing style props
+- [x] release `propStyles` utility as a separate package
+
+## Inspiration
+
+- [James Long's](https://github.com/jlongster) recent livestreams
+- [Mars Julian's](https://speakerd.s3.amazonaws.com/presentations/91fb936361b14e0391d5098cc2e2a7ab/2017.09.07_React_plus_X_.pdf) NordicJS talk 'Best Practices for Reusable UI Components'
+- [Tachyons](http://github.com/tachyons-css/tachyons/)
+
 ## Other Solutions
 
 - [storybook](https://github.com/storybooks/storybook)
 - [react-styleguidist](https://github.com/styleguidist/react-styleguidist)
 - [react-cosmos](https://github.com/react-cosmos/react-cosmos)
-
-## Inspiration
-
-- [James Long's](https://github.com/jlongster) recent livestreams
-- [Tachyons](http://github.com/tachyons-css/tachyons/)
 
 ## LICENSE
 

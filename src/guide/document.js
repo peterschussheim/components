@@ -5,6 +5,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import flash from '../util/flash'
 
 const modules = {}
 
@@ -15,12 +16,13 @@ function pathToName(path) {
 
 // TODO: make update bg fade after 5 seconds
 // if (updated):
-//  transition backgroundColor: 'tomato' and then transition BACK to backgroundColor: 'transparent'
+// transition backgroundColor: 'tomato' and then transition BACK to backgroundColor: 'transparent'
 function Usage({ name, render, updated }) {
   return (
     <div
       style={{
         margin: 40,
+        transition: 'background-color 3s ease',
         backgroundColor: updated ? 'tomato' : 'transparent'
       }}
     >
@@ -52,11 +54,14 @@ export default function render(rootNode) {
     mount.id = path
     rootNode.appendChild(mount)
 
-    ReactDOM.render(<Usage name={name} render={modules[key].default} />, mount)
+    ReactDOM.render(
+      <Usage name={name} render={modules[key].default} updated={false} />,
+      mount
+    )
   })
 }
 
-// hot reload modules
+// hot reload modules, taken from webpack docs
 
 var context = require.context('../components', false, /\.usage.js$/)
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import ResponsiveText from './ResponsiveText'
+import Text from './Text'
 
 // Setup some mock data
 const data = {
@@ -23,8 +23,8 @@ export default () => (
     Cat Species Detail:
     {data.categories.map((category, index) => (
       <div>
-        <ResponsiveText>Breed: {category.name}</ResponsiveText>
-        <ResponsiveText>Size: {category.size}</ResponsiveText>
+        <Text>Breed: {category.name}</Text>
+        <Text>Size: {category.size}</Text>
       </div>
     ))}
   </Section>

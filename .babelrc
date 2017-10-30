@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    [
+      "react-flow-props-to-prop-types",
+      {
+        /* options */
+      }
+    ]
+  ]
+}

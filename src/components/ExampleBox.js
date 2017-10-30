@@ -9,7 +9,6 @@ function ExampleBox({ children }) {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      backgroundColor="#6AB8AB"
       fontSize="5vw"
       width="100%"
     >

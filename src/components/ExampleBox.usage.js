@@ -1,10 +1,5 @@
 import React from 'react'
-import ResponsiveText from './ResponsiveText'
+import Text from './Text'
 import ExampleBox from './ExampleBox'
 
-export default data => (
-  <ExampleBox>
-    Hi!
-    <ResponsiveText>Text in a box</ResponsiveText>
-  </ExampleBox>
-)
+export default data => <ExampleBox>Text in a box</ExampleBox>

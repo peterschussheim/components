@@ -1,5 +1,5 @@
 import React from 'react'
-import ResponsiveText from './ResponsiveText'
+import Text from './Text'
 import { Div } from 'glamorous'
 
 export default function Section({ children, direction = 'vertical' }) {
@@ -29,9 +29,7 @@ export default function Section({ children, direction = 'vertical' }) {
       {items.map((item, i) => {
         return Array.isArray(item) ? (
           <div style={{ [innerMarginKey]: 15 }} key={i}>
-            <ResponsiveText style={{ fontSize: 12, marginBottom: 5 }}>
-              {item[0]}
-            </ResponsiveText>
+            <Text style={{ fontSize: 12, marginBottom: 5 }}>{item[0]}</Text>
             {item[1]}
           </div>
         ) : (

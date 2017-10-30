@@ -1,10 +1,33 @@
 import React from 'react'
+import { Div, ThemeProvider } from 'glamorous'
 import Header from './Header'
+import Text from './Text'
 
 const data = {
   heading: 'This is nice Header',
   text: 'Some nice text...Some nice text...Some nice text...'
 }
 
-// TODO: FIGURE THIS OUT, breaking as of 10/10
-export default data => <Header {...data} />
+export default () => {
+  return (
+    <ThemeProvider
+      theme={{
+        colors: {
+          faded: '#666',
+          fadedExtra: '#888'
+        }
+      }}
+    >
+      <Div maxWidth={600} margin="auto">
+        <Text>Normal</Text>
+        <Text subheading>subheading</Text>
+        <Text faded superheading>
+          faded superheading
+        </Text>
+        <Text fadedExtra substandard>
+          fadedExtra substandard
+        </Text>
+      </Div>
+    </ThemeProvider>
+  )
+}
