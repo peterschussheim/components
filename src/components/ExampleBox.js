@@ -1,7 +1,7 @@
 import React from 'react'
 import { Div } from 'glamorous'
 
-function ExampleBox({ children }) {
+function ExampleBox({ children, title }) {
   return (
     <Div
       padding="4vw"
@@ -14,7 +14,7 @@ function ExampleBox({ children }) {
     >
       <Div display="flex" flexDirection="column">
         <Div alignSelf="center" color="#333" marginBottom={4}>
-          {children}
+          {title}
         </Div>
         <Div
           backgroundColor="white"

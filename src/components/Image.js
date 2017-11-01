@@ -14,7 +14,8 @@ const Image = glamorous.img(
           borderRadius: typeof rounded === 'number' ? rounded : 6
         }
       : null,
-  ({ faded }) => (faded ? { opacity: 0.7 } : null)
+  ({ faded }) => (faded ? { opacity: 0.7 } : null),
+  ({ avatar }) => (avatar ? { width: '7vw' } : null)
 )
 
 export default Image

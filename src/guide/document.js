@@ -23,7 +23,7 @@ function Usage({ name, render, updated }) {
       style={{
         margin: 40,
         transition: 'background-color 3s ease',
-        backgroundColor: updated ? 'tomato' : 'transparent'
+        backgroundColor: updated ? '#6DCFD3' : 'transparent'
       }}
     >
       <h3
