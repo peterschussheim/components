@@ -6,24 +6,24 @@ import Image from './Image'
 export default class Avatar extends React.Component {
   static propTypes = {
     imgSrc: PropTypes.string.isRequired,
-    showIndicator: PropTypes.bool
+    presence: PropTypes.string
   }
 
   constructor(props) {
     super(props)
   }
 
-  state = { status: true }
+  state = { status: 'online' }
 
   render() {
     const { imgSrc } = this.props
     const { status } = this.state
     return (
       <div>
-        {this.props.showIndicator ? (
-          <Image faded src={imgSrc} status={status} alt="avatar" />
+        {this.props.presence ? (
+          <Image avatar src={imgSrc} status={status} alt="avatar" />
         ) : (
-          <Image src={imgSrc} alt="avatar" />
+          <Image avatar src={imgSrc} alt="avatar" />
         )}
       </div>
     )

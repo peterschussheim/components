@@ -21,9 +21,7 @@ function Usage({ name, render, updated }) {
   return (
     <div
       style={{
-        margin: 40,
-        transition: 'background-color 3s ease',
-        backgroundColor: updated ? '#6DCFD3' : 'transparent'
+        margin: 40
       }}
     >
       <h3
@@ -54,10 +52,7 @@ export default function render(rootNode) {
     mount.id = path
     rootNode.appendChild(mount)
 
-    ReactDOM.render(
-      <Usage name={name} render={modules[key].default} updated={false} />,
-      mount
-    )
+    ReactDOM.render(<Usage name={name} render={modules[key].default} />, mount)
   })
 }
 
@@ -95,7 +90,7 @@ function reloadUsage(path, module) {
     const mount = document.getElementById(path)
     ReactDOM.unmountComponentAtNode(mount)
     ReactDOM.render(
-      <Usage name={pathToName(path)} render={module.default} updated={true} />,
+      <Usage name={pathToName(path)} render={module.default} />,
       mount
     )
   } catch (e) {

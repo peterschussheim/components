@@ -1,6 +1,6 @@
 # components
 
-Lightweight style guide and component collection for building complex, responsive React components.
+[WIP]Lightweight style guide and component collection for building complex, responsive React components.
 
 ## Table of Contents
 - [Why?](#why)
@@ -55,7 +55,7 @@ yarn add components
 // TODO
 
 ## Components
-
+<!-- 
 ### Box
 
 // TODO
@@ -115,10 +115,11 @@ Looking at the example below (note that currently this snippet is HTML used to g
 
 In this section there are a few recipes to compose components provided in this module.
 
-// TODO
+// TODO -->
 
 ## TODO
 
+- [ ] Complete `Avatar` + `Presence`
 - [ ] figure out how to properly use a higher order component | render prop component to reduce 'song and dance'
 - [x] **PRIORITY** Build simple container to render a component so that we can show usage examples
 - [x] Decide on API for passing style props
@@ -128,6 +129,7 @@ In this section there are a few recipes to compose components provided in this m
 
 - [James Long's](https://github.com/jlongster) recent livestreams
 - [Mars Julian's](https://speakerd.s3.amazonaws.com/presentations/91fb936361b14e0391d5098cc2e2a7ab/2017.09.07_React_plus_X_.pdf) NordicJS talk 'Best Practices for Reusable UI Components'
+- [Brent Jackson](https://twitter.com/jxnblk)
 - [Tachyons](http://github.com/tachyons-css/tachyons/)
 
 ## Other Solutions
