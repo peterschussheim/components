@@ -4,6 +4,10 @@ import Text from './Text'
 
 export default () => (
   <Box>
-    <Text fontSize={[1, 2, 3, 4]}>This is a profound statement!</Text>
+    <Text heading>This is a Heading</Text>
+    <Text superheading>This is a SuperHeading</Text>
+    <Text subheading>This is a SubHeading</Text>
+    <Text standard>This is a standard piece of Text</Text>
+    <Text substandard>This is a substandard piece of Text</Text>
   </Box>
 )

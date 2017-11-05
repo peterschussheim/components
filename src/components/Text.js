@@ -7,6 +7,7 @@ const heading = {
   fontWeight: '500',
   lineHeight: '1.1'
 }
+
 const largerHeading = {
   marginTop: '20px',
   marginBottom: '10px'
