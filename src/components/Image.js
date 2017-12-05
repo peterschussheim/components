@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import glamorous from 'glamorous'
 
-const Image = glamorous.img(
+export default glamorous.img(
   {
     border: '0',
     verticalAlign: 'middle',
@@ -17,5 +17,3 @@ const Image = glamorous.img(
   ({ faded }) => (faded ? { opacity: 0.7 } : null),
   ({ avatar }) => (avatar ? { width: '7vw' } : null)
 )
-
-export default Image

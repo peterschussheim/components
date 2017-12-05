@@ -18,7 +18,7 @@ export default () => {
         }
       }}
     >
-      <Div maxWidth={600} margin="auto">
+      <Div>
         <Text>Normal</Text>
         <Text subheading>subheading</Text>
         <Text faded superheading>

@@ -1,13 +1,14 @@
 import React from 'react'
+import glamorous from 'glamorous'
 
-export default ({ viewBox, size, fill, pathData }) => (
-  <svg
+export default props => (
+  <glamorous.svg
     xmlns="http://www.w3.org/svg/2000"
-    viewBox={viewBox}
-    width={size}
-    height={size}
-    fill={fill}
+    viewBox={props.viewBox}
+    width={props.size}
+    height={props.size}
+    fill={props.fill}
   >
-    <path d={pathData} />
-  </svg>
+    <path d={props.pathData} />
+  </glamorous.svg>
 )
