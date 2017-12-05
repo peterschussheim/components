@@ -43,7 +43,7 @@ As a quick aside, [Mars Julian](https://twitter.com/marsjosephine) gave a fantas
 
 ## Installation
 
-**NOTE: this package has not yet been puvblished to NPM.**
+**NOTE: this package has not yet been published to NPM.**
 This module is distributed via [npm](https://npm.com) and should be installed as a `dependency`:
 
 ```
