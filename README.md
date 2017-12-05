@@ -54,63 +54,6 @@ yarn add components
 
 // TODO
 
-## Components
-<!-- 
-### Box
-
-// TODO
-
-### Button
-
-// TODO
-
-### Flex
-
-// TODO
-
-### Text
-
-// TODO
-
-### Modal
-
-// TODO
-
-### Sidebar
-
-An opinionated component that depends on [`react-router`](https://reacttraining.com/react-router/) and is implemented using an example from their docs.  
-// TODO
-
-### Loading
-
-// TODO
-
-### Nav
-
-// TODO
-
-### Error Boundary
-
-// TODO
-
-### Header
-
-Looking at the example below (note that currently this snippet is HTML used to guide the implementation in React), a `Header` component is the composition of primitives:
-
-```html
-<!-- https://teamtreehouse.com/community/what-is-the-difference-between-header-and-h1 -->
-<header>
-  <img src="images/logo.png" alt="Logo">
-  <nav>
-    <ul>
-      <li><a href="page-1.html">Page 1</a></li>
-      <li><a href="page-2.html">Page 2</a></li>
-      <li><a href="page-3.html">Page 3</a></li>
-    </ul>
-  </nav>
-</header>
-```
-
 ## Examples
 
 In this section there are a few recipes to compose components provided in this module.
