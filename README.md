@@ -1,5 +1,7 @@
 # components
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/peterschussheim/components.svg)](https://greenkeeper.io/)
+
 [WIP]Lightweight style guide and component collection for building complex, responsive React components.
 
 ## Table of Contents
